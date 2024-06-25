@@ -44,6 +44,7 @@ public:
     QWidget *page_2;
     QGridLayout *gridLayout_3;
     QListWidget *listWidget;
+    QPushButton *pushButtonSelectFile;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -109,6 +110,11 @@ public:
 
         gridLayout_3->addWidget(listWidget, 0, 0, 1, 1);
 
+        pushButtonSelectFile = new QPushButton(page_2);
+        pushButtonSelectFile->setObjectName("pushButtonSelectFile");
+
+        gridLayout_3->addWidget(pushButtonSelectFile, 1, 0, 1, 1);
+
         stackedWidget->addWidget(page_2);
 
         gridLayout_2->addWidget(stackedWidget, 0, 0, 1, 1);
@@ -136,6 +142,7 @@ public:
         labelAuth->setText(QCoreApplication::translate("MainWindow", "\320\222\321\205\320\276\320\264", nullptr));
         labelPassword->setText(QCoreApplication::translate("MainWindow", "\320\237\320\270\320\275\320\272\320\276\320\264", nullptr));
         pushButtonOk->setText(QCoreApplication::translate("MainWindow", "OK", nullptr));
+        pushButtonSelectFile->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 
 };

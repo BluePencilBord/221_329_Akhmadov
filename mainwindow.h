@@ -20,6 +20,10 @@ public:
 private slots:
     void on_pushButtonOk_clicked();
 
+    void on_pushButtonSelectFile_clicked();
+
+    void loadTransactions(QString filename);
+
 private:
     Ui::MainWindow *ui;
 };
