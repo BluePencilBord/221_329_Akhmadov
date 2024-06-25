@@ -21,7 +21,9 @@ class Ui_ListWidgetItem
 {
 public:
     QGridLayout *gridLayout;
-    QLabel *label;
+    QLabel *labelSum;
+    QLabel *labelWalletId;
+    QLabel *labelDate;
 
     void setupUi(QWidget *ListWidgetItem)
     {
@@ -30,10 +32,20 @@ public:
         ListWidgetItem->resize(458, 58);
         gridLayout = new QGridLayout(ListWidgetItem);
         gridLayout->setObjectName("gridLayout");
-        label = new QLabel(ListWidgetItem);
-        label->setObjectName("label");
+        labelSum = new QLabel(ListWidgetItem);
+        labelSum->setObjectName("labelSum");
 
-        gridLayout->addWidget(label, 0, 0, 1, 1);
+        gridLayout->addWidget(labelSum, 0, 0, 1, 1);
+
+        labelWalletId = new QLabel(ListWidgetItem);
+        labelWalletId->setObjectName("labelWalletId");
+
+        gridLayout->addWidget(labelWalletId, 0, 1, 1, 1);
+
+        labelDate = new QLabel(ListWidgetItem);
+        labelDate->setObjectName("labelDate");
+
+        gridLayout->addWidget(labelDate, 0, 2, 1, 1);
 
 
         retranslateUi(ListWidgetItem);
@@ -44,7 +56,9 @@ public:
     void retranslateUi(QWidget *ListWidgetItem)
     {
         ListWidgetItem->setWindowTitle(QCoreApplication::translate("ListWidgetItem", "Form", nullptr));
-        label->setText(QCoreApplication::translate("ListWidgetItem", "test", nullptr));
+        labelSum->setText(QCoreApplication::translate("ListWidgetItem", "test", nullptr));
+        labelWalletId->setText(QCoreApplication::translate("ListWidgetItem", "TextLabel", nullptr));
+        labelDate->setText(QCoreApplication::translate("ListWidgetItem", "TextLabel", nullptr));
     } // retranslateUi
 
 };

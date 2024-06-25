@@ -1,6 +1,6 @@
 {
     "transactions": [
-        {"sum": "10", "walletId": "11", "date": "12", "prevHash": "13"},
-        {"sum": "20", "walletId": "21", "date": "22", "prevHash": "23"}
+        {"sum": "10", "walletId": "11", "date": "12", "prevHash": ""},
+        {"sum": "20", "walletId": "21", "date": "22", "prevHash": "d3a50c7f9a396c36afbcb87d0a3245b834f4c30dcfc3e67fdc428409fb264f40"}
     ]
 }

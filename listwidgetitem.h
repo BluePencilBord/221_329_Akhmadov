@@ -12,16 +12,11 @@ class ListWidgetItem : public QWidget
     Q_OBJECT
 
 public:
-    explicit ListWidgetItem(QWidget *parent = nullptr);
+    explicit ListWidgetItem(QString sum, QString walletId, QString date, QString prevHash, QWidget *parent = nullptr);
     ~ListWidgetItem();
 
 private:
     Ui::ListWidgetItem *ui;
-
-    QString sum;
-    QString walletId;
-    QString date;
-    QString prevHash;
 };
 
 #endif // LISTWIDGETITEM_H

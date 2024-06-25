@@ -26,17 +26,26 @@ MainWindow::MainWindow(QWidget *parent)
     {
         QByteArray fileData = jsonFile.readAll();
         QJsonDocument jsonDoc = QJsonDocument::fromJson(fileData);
-        QJsonArray transactionsArray = jsonDoc.array();
+        QJsonArray transactionsArray = jsonDoc["transactions"].toArray();
 
         for (int i = 0; i != transactionsArray.size(); ++i)
         {
             QJsonObject jsonItem = transactionsArray[i].toObject();
 
-            QString stringtohash = jsonItem["sum"].toString() + jsonItem["walletId"].toString() + jsonItem["date"].toString() + jsonItem["prevHash"].toString();
-            QByteArray hash = QCryptographicHash::hash(stringtohash.toUtf8(), QCryptographicHash::Sha256);
+            if(i != 0)
+            {
+                QJsonObject prevjsonItem = transactionsArray[i-1].toObject();
+                QString stringtohash = prevjsonItem["sum"].toString() + prevjsonItem["walletId"].toString() + prevjsonItem["date"].toString() + prevjsonItem["prevHash"].toString();
+                QByteArray hash = QCryptographicHash::hash(stringtohash.toUtf8(), QCryptographicHash::Sha256);
+
+                if(hash.toHex() != jsonItem["prevHash"].toString())
+                {
+                    QMessageBox::critical(nullptr, "Ошибка", "Хеши не совпадают: " + hash.toHex());
+                }
+            }
 
             QListWidgetItem *newItem = new QListWidgetItem();
-            ListWidgetItem *newWidget = new ListWidgetItem;
+            ListWidgetItem *newWidget = new ListWidgetItem(jsonItem["sum"].toString(), jsonItem["walletId"].toString(), jsonItem["date"].toString(), jsonItem["prevHash"].toString());
 
             ui->listWidget->addItem(newItem);
             ui->listWidget->setItemWidget(newItem, newWidget);
