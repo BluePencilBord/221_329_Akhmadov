@@ -37,6 +37,10 @@ private slots:
 
     void on_lineEditAddDate_textChanged(const QString &arg1);
 
+    void on_pushButtonAdd_clicked();
+
+    void on_pushButtonGoBack_clicked();
+
 private:
     Ui::MainWindow *ui;
 

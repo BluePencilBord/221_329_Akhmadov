@@ -50,11 +50,13 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "on_lineEditAddSum_editingFinished",
     "on_lineEditAddSum_selectionChanged",
     "on_lineEditAddId_textChanged",
-    "on_lineEditAddDate_textChanged"
+    "on_lineEditAddDate_textChanged",
+    "on_pushButtonAdd_clicked",
+    "on_pushButtonGoBack_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[26];
+    uint offsetsAndSizes[30];
     char stringdata0[11];
     char stringdata1[24];
     char stringdata2[1];
@@ -68,6 +70,8 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata10[35];
     char stringdata11[29];
     char stringdata12[31];
+    char stringdata13[25];
+    char stringdata14[28];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -85,7 +89,9 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(166, 33),  // "on_lineEditAddSum_editingFini..."
         QT_MOC_LITERAL(200, 34),  // "on_lineEditAddSum_selectionCh..."
         QT_MOC_LITERAL(235, 28),  // "on_lineEditAddId_textChanged"
-        QT_MOC_LITERAL(264, 30)   // "on_lineEditAddDate_textChanged"
+        QT_MOC_LITERAL(264, 30),  // "on_lineEditAddDate_textChanged"
+        QT_MOC_LITERAL(295, 24),  // "on_pushButtonAdd_clicked"
+        QT_MOC_LITERAL(320, 27)   // "on_pushButtonGoBack_clicked"
     },
     "MainWindow",
     "on_pushButtonOk_clicked",
@@ -99,7 +105,9 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "on_lineEditAddSum_editingFinished",
     "on_lineEditAddSum_selectionChanged",
     "on_lineEditAddId_textChanged",
-    "on_lineEditAddDate_textChanged"
+    "on_lineEditAddDate_textChanged",
+    "on_pushButtonAdd_clicked",
+    "on_pushButtonGoBack_clicked"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -111,7 +119,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -119,15 +127,17 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   68,    2, 0x08,    1 /* Private */,
-       3,    0,   69,    2, 0x08,    2 /* Private */,
-       4,    1,   70,    2, 0x08,    3 /* Private */,
-       6,    1,   73,    2, 0x08,    5 /* Private */,
-       8,    1,   76,    2, 0x08,    7 /* Private */,
-       9,    0,   79,    2, 0x08,    9 /* Private */,
-      10,    0,   80,    2, 0x08,   10 /* Private */,
-      11,    1,   81,    2, 0x08,   11 /* Private */,
-      12,    1,   84,    2, 0x08,   13 /* Private */,
+       1,    0,   80,    2, 0x08,    1 /* Private */,
+       3,    0,   81,    2, 0x08,    2 /* Private */,
+       4,    1,   82,    2, 0x08,    3 /* Private */,
+       6,    1,   85,    2, 0x08,    5 /* Private */,
+       8,    1,   88,    2, 0x08,    7 /* Private */,
+       9,    0,   91,    2, 0x08,    9 /* Private */,
+      10,    0,   92,    2, 0x08,   10 /* Private */,
+      11,    1,   93,    2, 0x08,   11 /* Private */,
+      12,    1,   96,    2, 0x08,   13 /* Private */,
+      13,    0,   99,    2, 0x08,   15 /* Private */,
+      14,    0,  100,    2, 0x08,   16 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -139,6 +149,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    7,
     QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -174,7 +186,11 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'on_lineEditAddDate_textChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'on_pushButtonAdd_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonGoBack_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -194,6 +210,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->on_lineEditAddSum_selectionChanged(); break;
         case 7: _t->on_lineEditAddId_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 8: _t->on_lineEditAddDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 9: _t->on_pushButtonAdd_clicked(); break;
+        case 10: _t->on_pushButtonGoBack_clicked(); break;
         default: ;
         }
     }
@@ -218,13 +236,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 9;
+        _id -= 11;
     }
     return _id;
 }

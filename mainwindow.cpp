@@ -172,6 +172,7 @@ int MainWindow::decryptQByteArray(const QByteArray& encryptedBytes, QByteArray& 
     return 0;
 }
 
+bool input_valid1, input_valid2, input_valid3 = false;
 
 void MainWindow::on_lineEditAddSum_textChanged(const QString &arg1)
 {
@@ -179,12 +180,23 @@ void MainWindow::on_lineEditAddSum_textChanged(const QString &arg1)
     ui->lineEditAddSum->text().toInt(&is_numeric);
     if(is_numeric && (ui->lineEditAddSum->text().length() == 7))
     {
+        input_valid1 = true;
+    }
+    else
+    {
+        input_valid1 = false;
+    }
+
+    if(input_valid1 && input_valid2 && input_valid3)
+    {
         ui->pushButtonSave->setEnabled(true);
     }
     else
     {
         ui->pushButtonSave->setEnabled(false);
     }
+
+    ui->lineEditAddSum->setText(ui->lineEditAddSum->text().trimmed());
 }
 
 
@@ -215,17 +227,57 @@ void MainWindow::on_lineEditAddId_textChanged(const QString &arg1)
     ui->lineEditAddId->text().toInt(&is_numeric);
     if(is_numeric && (ui->lineEditAddId->text().length() == 6))
     {
+        input_valid2 = true;
+    }
+    else
+    {
+        input_valid2 = false;
+    }
+
+    if(input_valid1 && input_valid2 && input_valid3)
+    {
         ui->pushButtonSave->setEnabled(true);
     }
     else
     {
         ui->pushButtonSave->setEnabled(false);
     }
+
+    ui->lineEditAddId->setText(ui->lineEditAddId->text().trimmed());
 }
 
 
 void MainWindow::on_lineEditAddDate_textChanged(const QString &arg1)
 {
+    if((ui->lineEditAddDate->text().length() == 19) && arg1[4] == '.' && arg1[7] == '.' && arg1[10] == '_' && arg1[13] == ':' && arg1[16] == ':')
+    {
+        input_valid3 = true;
+    }
+    else
+    {
+        input_valid3 = false;
+    }
 
+    if(input_valid1 && input_valid2 && input_valid3)
+    {
+        ui->pushButtonSave->setEnabled(true);
+    }
+    else
+    {
+        ui->pushButtonSave->setEnabled(false);
+    }
+
+    ui->lineEditAddDate->setText(ui->lineEditAddDate->text().trimmed());
+}
+
+void MainWindow::on_pushButtonAdd_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_pushButtonGoBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }
 

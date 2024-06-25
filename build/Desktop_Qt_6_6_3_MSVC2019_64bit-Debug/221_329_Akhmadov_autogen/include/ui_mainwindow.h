@@ -56,6 +56,7 @@ public:
     QLineEdit *lineEditAddSum;
     QSpacerItem *verticalSpacer_3;
     QLabel *label_3;
+    QPushButton *pushButtonGoBack;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -144,7 +145,7 @@ public:
 
         verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
-        gridLayout_4->addItem(verticalSpacer_4, 5, 1, 1, 1);
+        gridLayout_4->addItem(verticalSpacer_4, 6, 1, 1, 1);
 
         lineEditAddDate = new QLineEdit(page_3);
         lineEditAddDate->setObjectName("lineEditAddDate");
@@ -176,6 +177,11 @@ public:
 
         gridLayout_4->addWidget(label_3, 3, 0, 1, 1);
 
+        pushButtonGoBack = new QPushButton(page_3);
+        pushButtonGoBack->setObjectName("pushButtonGoBack");
+
+        gridLayout_4->addWidget(pushButtonGoBack, 5, 1, 1, 1);
+
         stackedWidget->addWidget(page_3);
 
         gridLayout_2->addWidget(stackedWidget, 0, 0, 1, 1);
@@ -191,7 +197,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -208,6 +214,7 @@ public:
         pushButtonSave->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\320\275\320\276\320\274\320\265\321\200 \320\272\320\276\321\210\320\265\320\273\321\214\320\272\320\260", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\264\320\260\321\202\320\260 \321\202\321\200\320\260\320\275\320\267\320\260\320\272\321\206\320\270\320\270", nullptr));
+        pushButtonGoBack->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\267\320\260\320\264", nullptr));
     } // retranslateUi
 
 };
