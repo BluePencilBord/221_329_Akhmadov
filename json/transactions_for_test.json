@@ -1,0 +1,9 @@
+{
+    "transactions": [
+        {"sum": "0004536", "walletId": "756428", "date": "2024.06.25_10:40:00", "prevHash": ""},
+        {"sum": "0082562", "walletId": "356128", "date": "2024.06.25_11:30:00", "prevHash": "e320be4fdb48aedb14c9957dbfb3e56a3e001b136b546adbc366a2bf8a40f6ec"},
+        {"sum": "0051843", "walletId": "569362", "date": "2024.06.25_12:00:00", "prevHash": "44afbac61a71365b41bfd0439470eadf03b990dcb0a192ed50641cc07cf4af66"},
+        {"sum": "4249632", "walletId": "746086", "date": "2024.06.25_12:23:00", "prevHash": "1d74d3713b14d39bfa9dba738482a01511b695cb8393673157e72b"},
+        {"sum": "2989424", "walletId": "370818", "date": "2024.06.25_13:10:00", "prevHash": "966a62ed20c1611806865fc61b716e64b367440f3b72027d0423854de3f91a4b"}
+    ]
+}
