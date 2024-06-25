@@ -14,6 +14,8 @@
 #include <QBuffer>
 
 bool MainWindow::decryptJson(unsigned char *key, QString filename)
+
+void MainWindow::loadTransactions(QString filename)
 {
     QFile jsonFile(filename);
 
@@ -51,6 +53,15 @@ void MainWindow::loadTransactions(QByteArray bytearrayHashKey)
         bool is_red = false;
 
         qDebug() << transactionsArray.size();
+    }
+    else
+    {
+        ui->listWidget->clear();
+        QByteArray fileData = jsonFile.readAll();
+        QJsonDocument jsonDoc = QJsonDocument::fromJson(fileData);
+        QJsonArray transactionsArray = jsonDoc["transactions"].toArray();
+        bool is_red = false;
+
         for (int i = 0; i != transactionsArray.size(); ++i)
         {
             QJsonObject jsonItem = transactionsArray[i].toObject();
@@ -90,6 +101,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    loadTransactions("C:\\Users\\bruh\\Documents\\221_329_Akhmadov\\json\\transactions.json");
 }
 
 MainWindow::~MainWindow()
@@ -172,3 +185,8 @@ int MainWindow::decryptQByteArray(const QByteArray& encryptedBytes, QByteArray& 
     return 0;
 }
 
+    QString fileName = QFileDialog::getOpenFileName(this, "Выберите файл с транзакциями", "", "JSON Files (*.json);;All Files (*)");
+    if (!fileName.isEmpty()) {
+        loadTransactions(fileName);
+    }
+}

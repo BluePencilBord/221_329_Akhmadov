@@ -34,5 +34,9 @@ private:
     bool decryptJson(unsigned char *key, QString filename);
 
     QString fileName = "C:\\Users\\bruh\\Documents\\221_329_Akhmadov\\json\\transactions.json";
+    void loadTransactions(QString filename);
+
+private:
+    Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
