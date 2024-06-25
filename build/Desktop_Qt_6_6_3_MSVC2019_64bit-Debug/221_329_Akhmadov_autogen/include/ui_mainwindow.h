@@ -65,6 +65,7 @@ public:
         gridLayout->setObjectName("gridLayout");
         lineEditPassword = new QLineEdit(page);
         lineEditPassword->setObjectName("lineEditPassword");
+        lineEditPassword->setEchoMode(QLineEdit::Password);
 
         gridLayout->addWidget(lineEditPassword, 1, 2, 1, 2);
 
@@ -133,7 +134,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        labelPassword->setText(QCoreApplication::translate("MainWindow", "\320\237\320\270\320\275\320\272\320\276\320\264", nullptr));
+        labelPassword->setText(QCoreApplication::translate("MainWindow", "\320\237\320\260\321\200\320\276\320\273\321\214", nullptr));
         pushButtonOk->setText(QCoreApplication::translate("MainWindow", "OK", nullptr));
         pushButtonSelectFile->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
     } // retranslateUi

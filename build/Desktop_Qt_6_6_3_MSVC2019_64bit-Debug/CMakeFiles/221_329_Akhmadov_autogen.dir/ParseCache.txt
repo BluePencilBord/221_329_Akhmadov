@@ -309,6 +309,6 @@ C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.h
  mdp:C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.h
 C:/Users/bruh/Documents/221_329_Akhmadov/listwidgetitem.cpp
  uic:ui_listwidgetitem.h
+C:/Users/bruh/Documents/221_329_Akhmadov/main.cpp
 C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.cpp
  uic:./ui_mainwindow.h
-C:/Users/bruh/Documents/221_329_Akhmadov/main.cpp
