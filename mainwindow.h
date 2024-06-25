@@ -44,7 +44,7 @@ private slots:
     void on_lineEditAddId_editingFinished();
 
     void on_lineEditAddDate_editingFinished();
-
+    
 private:
     Ui::MainWindow *ui;
 
@@ -54,5 +54,10 @@ private:
     bool decryptJson(unsigned char *key, QString filename);
 
     QString fileName = "C:\\Users\\bruh\\Documents\\221_329_Akhmadov\\json\\transactions.json";
+    
+    void loadTransactions(QString filename);
+
+private:
+    Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

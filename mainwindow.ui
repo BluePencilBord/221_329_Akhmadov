@@ -35,6 +35,10 @@
           </property>
          </widget>
         </item>
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="3">
          <spacer name="verticalSpacer">
           <property name="orientation">
@@ -50,12 +54,22 @@
         </item>
         <item row="1" column="4">
          <spacer name="horizontalSpacer_2">
+        <item row="1" column="2">
+         <widget class="QLabel" name="labelAuth">
+          <property name="text">
+           <string>Вход</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <spacer name="horizontalSpacer">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>267</width>
+            <width>257</width>
             <height>20</height>
            </size>
           </property>
@@ -90,12 +104,25 @@
         </item>
         <item row="1" column="0">
          <spacer name="horizontalSpacer">
+        <item row="2" column="1">
+         <widget class="QLabel" name="labelPassword">
+          <property name="text">
+           <string>Пинкод</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2" colspan="2">
+         <widget class="QLineEdit" name="lineEditPassword"/>
+        </item>
+        <item row="2" column="4">
+         <spacer name="horizontalSpacer_2">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>257</width>
+            <width>267</width>
             <height>20</height>
            </size>
           </property>
@@ -174,6 +201,25 @@
         </item>
         <item row="0" column="1">
          <spacer name="verticalSpacer_3">
+        <item row="2" column="2" colspan="2">
+        <item row="3" column="2" colspan="2">
+         <widget class="QPushButton" name="pushButtonOk">
+          <property name="text">
+           <string>OK</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>257</width>
+            <height>20</height>
+        <item row="4" column="3">
+         <spacer name="verticalSpacer_2">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
@@ -181,6 +227,7 @@
            <size>
             <width>20</width>
             <height>40</height>
+            <height>223</height>
            </size>
           </property>
          </spacer>
@@ -196,6 +243,17 @@
          <widget class="QPushButton" name="pushButtonGoBack">
           <property name="text">
            <string>Назад</string>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QListWidget" name="listWidget"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButtonSelectFile">
+          <property name="text">
+           <string>Выбрать файл</string>
           </property>
          </widget>
         </item>
