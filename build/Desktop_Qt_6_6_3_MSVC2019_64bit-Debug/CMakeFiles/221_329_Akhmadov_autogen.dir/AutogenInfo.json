@@ -318,6 +318,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/bruh/Documents/221_329_Akhmadov/listwidgetitem.h",
+			"MU",
+			"EWIEGA46WW/moc_listwidgetitem.cpp",
+			null
+		],
+		[
 			"C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -378,6 +384,11 @@
 	"SETTINGS_FILE" : "C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/221_329_Akhmadov_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/bruh/Documents/221_329_Akhmadov/listwidgetitem.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/bruh/Documents/221_329_Akhmadov/main.cpp", "MU", null ],
 		[ "C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.cpp", "MU", null ]
 	],

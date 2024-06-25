@@ -138,6 +138,7 @@
   C:/Qt/6.6.3/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.6.3/msvc2019_64/include/QtWidgets/QWidget \
   C:/Qt/6.6.3/msvc2019_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtabwidget.h \
@@ -373,6 +374,9 @@
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
+  C:/Users/bruh/Documents/221_329_Akhmadov/listwidgetitem.cpp \
+  C:/Users/bruh/Documents/221_329_Akhmadov/listwidgetitem.h \
+  C:/Users/bruh/Documents/221_329_Akhmadov/listwidgetitem.ui \
   C:/Users/bruh/Documents/221_329_Akhmadov/main.cpp \
   C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.cpp \
   C:/Users/bruh/Documents/221_329_Akhmadov/mainwindow.h \

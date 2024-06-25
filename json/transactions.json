@@ -1,0 +1,6 @@
+{
+    "transactions": [
+        {"sum": "10", "walletId": "11", "date": "12", "prevHash": "13"},
+        {"sum": "20", "walletId": "21", "date": "22", "prevHash": "23"}
+    ]
+}
