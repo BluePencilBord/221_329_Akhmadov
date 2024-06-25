@@ -1,0 +1,8 @@
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/221_329_Akhmadov.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/install.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/install/local.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/221_329_Akhmadov_autogen_timestamp_deps.dir
+C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/221_329_Akhmadov_autogen.dir
