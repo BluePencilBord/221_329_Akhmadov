@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QJsonArray>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,6 +23,17 @@ private slots:
 
     void on_pushButtonSelectFile_clicked();
 
+    void loadTransactions(QByteArray bytearrayHashKey);
+
+private:
+    Ui::MainWindow *ui;
+
+    int decryptQByteArray(const QByteArray& encryptedBytes, QByteArray& decryptedBytes, unsigned char *key);
+    QJsonArray transactionsArray;
+
+    bool decryptJson(unsigned char *key, QString filename);
+
+    QString fileName = "C:\\Users\\bruh\\Documents\\221_329_Akhmadov\\json\\transactions.json";
     void loadTransactions(QString filename);
 
 private:

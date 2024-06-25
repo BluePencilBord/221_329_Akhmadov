@@ -24,6 +24,17 @@
        </size>
       </property>
       <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="2" colspan="2">
+         <widget class="QLineEdit" name="lineEditPassword">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
        <number>1</number>
       </property>
       <widget class="QWidget" name="page">
@@ -41,6 +52,8 @@
           </property>
          </spacer>
         </item>
+        <item row="1" column="4">
+         <spacer name="horizontalSpacer_2">
         <item row="1" column="2">
          <widget class="QLabel" name="labelAuth">
           <property name="text">
@@ -55,12 +68,29 @@
           </property>
           <property name="sizeHint" stdset="0">
            <size>
+            <width>267</width>
             <width>257</width>
             <height>20</height>
            </size>
           </property>
          </spacer>
         </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="labelPassword">
+          <property name="text">
+           <string>Пароль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>223</height>
         <item row="2" column="1">
          <widget class="QLabel" name="labelPassword">
           <property name="text">
@@ -84,6 +114,7 @@
           </property>
          </spacer>
         </item>
+        <item row="2" column="2" colspan="2">
         <item row="3" column="2" colspan="2">
          <widget class="QPushButton" name="pushButtonOk">
           <property name="text">
@@ -91,6 +122,15 @@
           </property>
          </widget>
         </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>257</width>
+            <height>20</height>
         <item row="4" column="3">
          <spacer name="verticalSpacer_2">
           <property name="orientation">
