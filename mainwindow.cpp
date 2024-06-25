@@ -195,8 +195,6 @@ void MainWindow::on_lineEditAddSum_textChanged(const QString &arg1)
     {
         ui->pushButtonSave->setEnabled(false);
     }
-
-    ui->lineEditAddSum->setText(ui->lineEditAddSum->text().trimmed());
 }
 
 
@@ -207,6 +205,7 @@ void MainWindow::on_lineEditAddSum_textEdited(const QString &arg1)
 
 void MainWindow::on_lineEditAddSum_editingFinished()
 {
+    ui->lineEditAddSum->setText(ui->lineEditAddSum->text().trimmed());
     int length = ui->lineEditAddSum->text().length();
     for(int i = 0; i < (7 - length); ++i)
     {
@@ -242,8 +241,6 @@ void MainWindow::on_lineEditAddId_textChanged(const QString &arg1)
     {
         ui->pushButtonSave->setEnabled(false);
     }
-
-    ui->lineEditAddId->setText(ui->lineEditAddId->text().trimmed());
 }
 
 
@@ -266,8 +263,6 @@ void MainWindow::on_lineEditAddDate_textChanged(const QString &arg1)
     {
         ui->pushButtonSave->setEnabled(false);
     }
-
-    ui->lineEditAddDate->setText(ui->lineEditAddDate->text().trimmed());
 }
 
 void MainWindow::on_pushButtonAdd_clicked()
@@ -281,3 +276,14 @@ void MainWindow::on_pushButtonGoBack_clicked()
     ui->stackedWidget->setCurrentIndex(1);
 }
 
+
+void MainWindow::on_lineEditAddId_editingFinished()
+{
+    ui->lineEditAddId->setText(ui->lineEditAddId->text().trimmed());
+}
+
+
+void MainWindow::on_lineEditAddDate_editingFinished()
+{
+    ui->lineEditAddDate->setText(ui->lineEditAddDate->text().trimmed());
+}

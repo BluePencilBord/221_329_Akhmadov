@@ -41,6 +41,10 @@ private slots:
 
     void on_pushButtonGoBack_clicked();
 
+    void on_lineEditAddId_editingFinished();
+
+    void on_lineEditAddDate_editingFinished();
+
 private:
     Ui::MainWindow *ui;
 
