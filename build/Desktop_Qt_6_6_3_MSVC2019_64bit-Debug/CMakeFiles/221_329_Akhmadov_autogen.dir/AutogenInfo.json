@@ -310,6 +310,10 @@
 		"C:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-debug.cmake",
 		"C:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindOpenSSL.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/bruh/Documents/221_329_Akhmadov",
@@ -354,6 +358,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"C:/Qt/Tools/OpenSSLv3/Win_x64/include",
 		"C:/Qt/6.6.3/msvc2019_64/include/QtCore",
 		"C:/Qt/6.6.3/msvc2019_64/include",
 		"C:/Qt/6.6.3/msvc2019_64/mkspecs/win32-msvc",

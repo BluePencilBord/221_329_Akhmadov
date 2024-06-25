@@ -46,6 +46,16 @@ endif()
 
 target_link_libraries(221_329_Akhmadov PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
+include(FindOpenSSL) # средствами CMake автоматически найти установленную OpenSSL на данной машине, если это возможно
+target_include_directories(
+    221_329_Akhmadov
+    PRIVATE
+    C:/QT/Tools/OpenSSLv3/Win_x64/include)
+target_link_libraries(
+    221_329_Akhmadov # к какой цели подключать
+    PRIVATE # в каком режиме подключать
+    C:/Qt/Tools/OpenSSLv3/Win_x64/lib/libcrypto.lib) # что именно подключать
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
