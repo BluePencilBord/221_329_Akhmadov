@@ -27,6 +27,16 @@ private slots:
 
     void on_lineEditAddSum_textChanged(const QString &arg1);
 
+    void on_lineEditAddSum_textEdited(const QString &arg1);
+
+    void on_lineEditAddSum_editingFinished();
+
+    void on_lineEditAddSum_selectionChanged();
+
+    void on_lineEditAddId_textChanged(const QString &arg1);
+
+    void on_lineEditAddDate_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
 

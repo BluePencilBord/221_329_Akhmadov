@@ -49,13 +49,13 @@ public:
     QGridLayout *gridLayout_4;
     QLabel *label;
     QLineEdit *lineEditAddId;
+    QSpacerItem *verticalSpacer_4;
     QLineEdit *lineEditAddDate;
-    QPushButton *pushButton;
+    QPushButton *pushButtonSave;
     QLabel *label_2;
     QLineEdit *lineEditAddSum;
     QSpacerItem *verticalSpacer_3;
     QLabel *label_3;
-    QSpacerItem *verticalSpacer_4;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -142,16 +142,20 @@ public:
 
         gridLayout_4->addWidget(lineEditAddId, 2, 1, 1, 1);
 
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer_4, 5, 1, 1, 1);
+
         lineEditAddDate = new QLineEdit(page_3);
         lineEditAddDate->setObjectName("lineEditAddDate");
 
         gridLayout_4->addWidget(lineEditAddDate, 3, 1, 1, 1);
 
-        pushButton = new QPushButton(page_3);
-        pushButton->setObjectName("pushButton");
-        pushButton->setEnabled(false);
+        pushButtonSave = new QPushButton(page_3);
+        pushButtonSave->setObjectName("pushButtonSave");
+        pushButtonSave->setEnabled(false);
 
-        gridLayout_4->addWidget(pushButton, 4, 1, 1, 1);
+        gridLayout_4->addWidget(pushButtonSave, 4, 1, 1, 1);
 
         label_2 = new QLabel(page_3);
         label_2->setObjectName("label_2");
@@ -172,10 +176,6 @@ public:
 
         gridLayout_4->addWidget(label_3, 3, 0, 1, 1);
 
-        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
-
-        gridLayout_4->addItem(verticalSpacer_4, 5, 1, 1, 1);
-
         stackedWidget->addWidget(page_3);
 
         gridLayout_2->addWidget(stackedWidget, 0, 0, 1, 1);
@@ -191,7 +191,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -205,7 +205,7 @@ public:
         pushButtonSelectFile->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
         pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\321\201\321\203\320\274\320\274\320\260 \321\202\321\200\320\260\320\275\320\267\320\260\320\272\321\206\320\270\320\270", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
+        pushButtonSave->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\320\275\320\276\320\274\320\265\321\200 \320\272\320\276\321\210\320\265\320\273\321\214\320\272\320\260", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\264\320\260\321\202\320\260 \321\202\321\200\320\260\320\275\320\267\320\260\320\272\321\206\320\270\320\270", nullptr));
     } // retranslateUi

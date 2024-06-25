@@ -175,6 +175,57 @@ int MainWindow::decryptQByteArray(const QByteArray& encryptedBytes, QByteArray& 
 
 void MainWindow::on_lineEditAddSum_textChanged(const QString &arg1)
 {
+    bool is_numeric;
+    ui->lineEditAddSum->text().toInt(&is_numeric);
+    if(is_numeric && (ui->lineEditAddSum->text().length() == 7))
+    {
+        ui->pushButtonSave->setEnabled(true);
+    }
+    else
+    {
+        ui->pushButtonSave->setEnabled(false);
+    }
+}
+
+
+void MainWindow::on_lineEditAddSum_textEdited(const QString &arg1)
+{
+
+}
+
+void MainWindow::on_lineEditAddSum_editingFinished()
+{
+    int length = ui->lineEditAddSum->text().length();
+    for(int i = 0; i < (7 - length); ++i)
+    {
+        ui->lineEditAddSum->setText("0" + ui->lineEditAddSum->text());
+    }
+}
+
+
+void MainWindow::on_lineEditAddSum_selectionChanged()
+{
+
+}
+
+
+void MainWindow::on_lineEditAddId_textChanged(const QString &arg1)
+{
+    bool is_numeric;
+    ui->lineEditAddId->text().toInt(&is_numeric);
+    if(is_numeric && (ui->lineEditAddId->text().length() == 6))
+    {
+        ui->pushButtonSave->setEnabled(true);
+    }
+    else
+    {
+        ui->pushButtonSave->setEnabled(false);
+    }
+}
+
+
+void MainWindow::on_lineEditAddDate_textChanged(const QString &arg1)
+{
 
 }
 

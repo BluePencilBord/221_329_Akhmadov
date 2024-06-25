@@ -136,11 +136,24 @@
         <item row="2" column="1">
          <widget class="QLineEdit" name="lineEditAddId"/>
         </item>
+        <item row="5" column="1">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item row="3" column="1">
          <widget class="QLineEdit" name="lineEditAddDate"/>
         </item>
         <item row="4" column="1">
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="pushButtonSave">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -178,19 +191,6 @@
            <string>дата транзакции</string>
           </property>
          </widget>
-        </item>
-        <item row="5" column="1">
-         <spacer name="verticalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
         </item>
        </layout>
       </widget>
