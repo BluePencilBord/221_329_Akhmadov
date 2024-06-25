@@ -29,8 +29,9 @@ bool MainWindow::decryptJson(unsigned char *key, QString filename)
     int return_code = MainWindow::decryptQByteArray(encryptedBytes, decryptedBytes, key);
 
     QJsonDocument jsonDoc = QJsonDocument::fromJson(decryptedBytes);
-    qDebug() << decryptedBytes;
-    this->transactionsArray = jsonDoc["cridentials"].toArray();
+    QJsonObject jsonObj = jsonDoc.object();
+    qDebug() << jsonDoc;
+    transactionsArray = jsonObj["transactions"].toArray();
 
     jsonFile.close();
 
@@ -40,13 +41,16 @@ bool MainWindow::decryptJson(unsigned char *key, QString filename)
 
 void MainWindow::loadTransactions(QByteArray bytearrayHashKey)
 {
+    ui->listWidget->clear();
+
     unsigned char HashKey[32] = {0};
     memcpy(HashKey, bytearrayHashKey.data(), 32);
 
-    if(!decryptJson(HashKey, fileName))
+    if(decryptJson(HashKey, fileName))
     {
         bool is_red = false;
 
+        qDebug() << transactionsArray.size();
         for (int i = 0; i != transactionsArray.size(); ++i)
         {
             QJsonObject jsonItem = transactionsArray[i].toObject();
@@ -74,6 +78,11 @@ void MainWindow::loadTransactions(QByteArray bytearrayHashKey)
             newItem->setSizeHint(newWidget->sizeHint());
         }
     }
+    else
+    {
+        QMessageBox::critical(nullptr, "Ошибка", "Неверный пинкод");
+        ui->stackedWidget->setCurrentIndex(0);
+    }
 }
 
 MainWindow::MainWindow(QWidget *parent)
@@ -93,6 +102,7 @@ void MainWindow::on_pushButtonOk_clicked()
     ui->stackedWidget->setCurrentIndex(1);
 
     QByteArray bytearrayHashKey = QCryptographicHash::hash(ui->lineEditPassword->text().toUtf8(), QCryptographicHash::Sha256);
+    ui->lineEditPassword->setText("");
     loadTransactions(bytearrayHashKey);
 }
 

@@ -24,10 +24,17 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="2" colspan="2">
+         <widget class="QLineEdit" name="lineEditPassword">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="3">
          <spacer name="verticalSpacer">
           <property name="orientation">
@@ -41,37 +48,7 @@
           </property>
          </spacer>
         </item>
-        <item row="1" column="2">
-         <widget class="QLabel" name="labelAuth">
-          <property name="text">
-           <string>Вход</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>257</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLabel" name="labelPassword">
-          <property name="text">
-           <string>Пинкод</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="2" colspan="2">
-         <widget class="QLineEdit" name="lineEditPassword"/>
-        </item>
-        <item row="2" column="4">
+        <item row="1" column="4">
          <spacer name="horizontalSpacer_2">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -84,14 +61,14 @@
           </property>
          </spacer>
         </item>
-        <item row="3" column="2" colspan="2">
-         <widget class="QPushButton" name="pushButtonOk">
+        <item row="1" column="1">
+         <widget class="QLabel" name="labelPassword">
           <property name="text">
-           <string>OK</string>
+           <string>Пинкод</string>
           </property>
          </widget>
         </item>
-        <item row="4" column="3">
+        <item row="3" column="3">
          <spacer name="verticalSpacer_2">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
@@ -100,6 +77,26 @@
            <size>
             <width>20</width>
             <height>223</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="2" colspan="2">
+         <widget class="QPushButton" name="pushButtonOk">
+          <property name="text">
+           <string>OK</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>257</width>
+            <height>20</height>
            </size>
           </property>
          </spacer>

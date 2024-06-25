@@ -43,7 +43,7 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "",
     "on_pushButtonSelectFile_clicked",
     "loadTransactions",
-    "filename"
+    "bytearrayHashKey"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
@@ -53,7 +53,7 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata2[1];
     char stringdata3[32];
     char stringdata4[17];
-    char stringdata5[9];
+    char stringdata5[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -64,14 +64,14 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(35, 0),  // ""
         QT_MOC_LITERAL(36, 31),  // "on_pushButtonSelectFile_clicked"
         QT_MOC_LITERAL(68, 16),  // "loadTransactions"
-        QT_MOC_LITERAL(85, 8)   // "filename"
+        QT_MOC_LITERAL(85, 16)   // "bytearrayHashKey"
     },
     "MainWindow",
     "on_pushButtonOk_clicked",
     "",
     "on_pushButtonSelectFile_clicked",
     "loadTransactions",
-    "filename"
+    "bytearrayHashKey"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -98,7 +98,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,    5,
+    QMetaType::Void, QMetaType::QByteArray,    5,
 
        0        // eod
 };
@@ -118,7 +118,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'loadTransactions'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>
+        QtPrivate::TypeAndForceComplete<QByteArray, std::false_type>
     >,
     nullptr
 } };
@@ -131,7 +131,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_pushButtonOk_clicked(); break;
         case 1: _t->on_pushButtonSelectFile_clicked(); break;
-        case 2: _t->loadTransactions((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->loadTransactions((*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
         }
     }

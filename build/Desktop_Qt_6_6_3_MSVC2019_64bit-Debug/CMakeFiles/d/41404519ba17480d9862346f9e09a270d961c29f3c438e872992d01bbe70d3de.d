@@ -1,4 +1,5 @@
 221_329_Akhmadov_autogen/timestamp: \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/QJsonArray \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -17,6 +18,9 @@
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qcalendar.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qcborcommon.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qcborvalue.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qchar.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qcompare.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qcompare_impl.h \
@@ -29,7 +33,9 @@
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qdatetime.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qdebug.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qendian.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qflags.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qfloat16.h \
@@ -44,9 +50,12 @@
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qiterable.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qiterator.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qjsonarray.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qjsonvalue.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qline.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qlist.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qlocale.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qlogging.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qmalloc.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qmap.h \
@@ -67,6 +76,7 @@
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qrect.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qrefcount.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qset.h \
@@ -107,7 +117,9 @@
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qtypes.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/qurl.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qutf8stringview.h \
+  C:/Qt/6.6.3/msvc2019_64/include/QtCore/quuid.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qvariant.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.6.3/msvc2019_64/include/QtCore/qversiontagging.h \
@@ -356,6 +368,7 @@
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindOpenSSL.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindThreads.cmake \
@@ -369,6 +382,7 @@
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake \
   C:/Users/bruh/Documents/221_329_Akhmadov/CMakeLists.txt \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \

@@ -33,14 +33,13 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *page;
     QGridLayout *gridLayout;
-    QSpacerItem *verticalSpacer;
-    QLabel *labelAuth;
-    QSpacerItem *horizontalSpacer;
-    QLabel *labelPassword;
     QLineEdit *lineEditPassword;
+    QSpacerItem *verticalSpacer;
     QSpacerItem *horizontalSpacer_2;
-    QPushButton *pushButtonOk;
+    QLabel *labelPassword;
     QSpacerItem *verticalSpacer_2;
+    QPushButton *pushButtonOk;
+    QSpacerItem *horizontalSpacer;
     QWidget *page_2;
     QGridLayout *gridLayout_3;
     QListWidget *listWidget;
@@ -64,41 +63,36 @@ public:
         page->setObjectName("page");
         gridLayout = new QGridLayout(page);
         gridLayout->setObjectName("gridLayout");
+        lineEditPassword = new QLineEdit(page);
+        lineEditPassword->setObjectName("lineEditPassword");
+
+        gridLayout->addWidget(lineEditPassword, 1, 2, 1, 2);
+
         verticalSpacer = new QSpacerItem(20, 173, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
         gridLayout->addItem(verticalSpacer, 0, 3, 1, 1);
 
-        labelAuth = new QLabel(page);
-        labelAuth->setObjectName("labelAuth");
+        horizontalSpacer_2 = new QSpacerItem(267, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
-        gridLayout->addWidget(labelAuth, 1, 2, 1, 1);
-
-        horizontalSpacer = new QSpacerItem(257, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer, 2, 0, 1, 1);
+        gridLayout->addItem(horizontalSpacer_2, 1, 4, 1, 1);
 
         labelPassword = new QLabel(page);
         labelPassword->setObjectName("labelPassword");
 
-        gridLayout->addWidget(labelPassword, 2, 1, 1, 1);
+        gridLayout->addWidget(labelPassword, 1, 1, 1, 1);
 
-        lineEditPassword = new QLineEdit(page);
-        lineEditPassword->setObjectName("lineEditPassword");
+        verticalSpacer_2 = new QSpacerItem(20, 223, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
-        gridLayout->addWidget(lineEditPassword, 2, 2, 1, 2);
-
-        horizontalSpacer_2 = new QSpacerItem(267, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer_2, 2, 4, 1, 1);
+        gridLayout->addItem(verticalSpacer_2, 3, 3, 1, 1);
 
         pushButtonOk = new QPushButton(page);
         pushButtonOk->setObjectName("pushButtonOk");
 
-        gridLayout->addWidget(pushButtonOk, 3, 2, 1, 2);
+        gridLayout->addWidget(pushButtonOk, 2, 2, 1, 2);
 
-        verticalSpacer_2 = new QSpacerItem(20, 223, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+        horizontalSpacer = new QSpacerItem(257, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
-        gridLayout->addItem(verticalSpacer_2, 4, 3, 1, 1);
+        gridLayout->addItem(horizontalSpacer, 1, 0, 1, 1);
 
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
@@ -130,7 +124,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -139,7 +133,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        labelAuth->setText(QCoreApplication::translate("MainWindow", "\320\222\321\205\320\276\320\264", nullptr));
         labelPassword->setText(QCoreApplication::translate("MainWindow", "\320\237\320\270\320\275\320\272\320\276\320\264", nullptr));
         pushButtonOk->setText(QCoreApplication::translate("MainWindow", "OK", nullptr));
         pushButtonSelectFile->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
