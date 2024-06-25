@@ -1,0 +1,23 @@
+# ninja log v5
+22	121	7410070995283134	221_329_Akhmadov_autogen/timestamp	a35f95ae1e678a44
+22	121	7410070995283134	221_329_Akhmadov_autogen/mocs_compilation.cpp	a35f95ae1e678a44
+129	1626	7410071010303141	CMakeFiles/221_329_Akhmadov.dir/mainwindow.cpp.obj	db6646cf33dcbff1
+22	121	7410070995283134	C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/221_329_Akhmadov_autogen/timestamp	a35f95ae1e678a44
+22	121	7410070995283134	C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/221_329_Akhmadov_autogen/mocs_compilation.cpp	a35f95ae1e678a44
+273	1948	7410066869476315	CMakeFiles/221_329_Akhmadov.dir/221_329_Akhmadov_autogen/mocs_compilation.cpp.obj	b0472b40bfab3355
+278	1950	7410066869466349	CMakeFiles/221_329_Akhmadov.dir/main.cpp.obj	9f30b2c3180e5d7b
+1626	1781	7410071011439768	221_329_Akhmadov.exe	2f17596a4dd983e3
+24	262	7410078573785180	221_329_Akhmadov_autogen/timestamp	a35f95ae1e678a44
+24	262	7410078573785180	221_329_Akhmadov_autogen/mocs_compilation.cpp	a35f95ae1e678a44
+24	262	7410078573785180	C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/221_329_Akhmadov_autogen/timestamp	a35f95ae1e678a44
+24	262	7410078573785180	C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/221_329_Akhmadov_autogen/mocs_compilation.cpp	a35f95ae1e678a44
+263	1730	7410078588784306	CMakeFiles/221_329_Akhmadov.dir/221_329_Akhmadov_autogen/mocs_compilation.cpp.obj	b0472b40bfab3355
+268	1732	7410078588784306	CMakeFiles/221_329_Akhmadov.dir/main.cpp.obj	9f30b2c3180e5d7b
+272	1879	7410078590269337	CMakeFiles/221_329_Akhmadov.dir/mainwindow.cpp.obj	db6646cf33dcbff1
+1879	2090	7410078591898468	221_329_Akhmadov.exe	2f17596a4dd983e3
+21	128	7410078676748299	221_329_Akhmadov_autogen/timestamp	a35f95ae1e678a44
+21	128	7410078676748299	221_329_Akhmadov_autogen/mocs_compilation.cpp	a35f95ae1e678a44
+21	128	7410078676748299	C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/221_329_Akhmadov_autogen/timestamp	a35f95ae1e678a44
+21	128	7410078676748299	C:/Users/bruh/Documents/221_329_Akhmadov/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/221_329_Akhmadov_autogen/mocs_compilation.cpp	a35f95ae1e678a44
+134	1756	7410078692977584	CMakeFiles/221_329_Akhmadov.dir/mainwindow.cpp.obj	db6646cf33dcbff1
+1756	1919	7410078694213449	221_329_Akhmadov.exe	2f17596a4dd983e3
